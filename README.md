@@ -124,6 +124,11 @@ ground-breaking, but is decently good for such a simple model.
 On unseen images (a random collection of US and some German roadsigns), the model achieved less
 accuracy. Road signs that were similar to German road signs (e.g. STOP sign, Yield, No U Turn, etc.) were accurately identified (as expected). Others were only corectly identified in the Top5 category. Still others were incorrectly identified.
 
+The details of the model are shown in the included Python notebook.
+
+
+---
+
 
 ### Overview
 
