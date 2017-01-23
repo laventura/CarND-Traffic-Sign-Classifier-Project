@@ -14,11 +14,11 @@ The current state of the art solutions for this problem are very accurate:
 | Multi-column DeepNNs | 99.45% | [Ciresan et al] (http://people.idsia.ch/~juergen/nn2012traffic.pdf)
 | Human Accuracy | 98.32%      | [Humans](http://benchmark.ini.rub.de/)   |
 
-The dataset can be obtained [here]((https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip)
+The dataset can be obtained [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip)
 
 I implemented this project using [Keras](http://keras.io) (running on top of TensorFlow) instead of on bare TensorFlow because (a) Keras provides a higher-level abstraction than barebones TensorFlow, (b) I've used TensorFlow previously and was keen to explore Keras's capabilities.
 
-I've greatly benefited from a few people, including [Vivek Yadav][https://medium.com/@vivek.yadav/improved-performance-of-deep-learning-neural-network-models-on-traffic-sign-classification-using-6355346da2dc#.9scb6m7cf], whose solution inspired me for this write-up. _Thanks!_
+I've greatly benefited from a few people, including [Vivek Yadav](https://medium.com/@vivek.yadav/improved-performance-of-deep-learning-neural-network-models-on-traffic-sign-classification-using-6355346da2dc#.9scb6m7cf), whose solution inspired me for this write-up. _Thanks!_
 
 
 1. Exploring the dataset
@@ -37,7 +37,8 @@ etc. They also somewhat less known signs such as Wild Animals Crossing, etc. The
 each. However, the images are not evenly distributed. 
 
 The following picture shows the distribution of the Training dataset and Test dataset. 
-![png](images/train-test-distro.jpg)
+
+![png](images/train-test-distro.png)
 
 As can be seen, some classes have ~2000 images while others have almost 1/10th (~210 or so). This is a
 problem while training NNs. A common technique is to _augment the images_ so that network can learn
